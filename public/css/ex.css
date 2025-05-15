@@ -1,0 +1,14 @@
+/*  */
+
+
+
+.column {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+}
+
+.seat-box {
+    display: flex;
+    gap: 4px;
+}

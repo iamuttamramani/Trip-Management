@@ -1,0 +1,227 @@
+/*  */
+
+.content-container {
+
+}
+
+/* Heading sec */
+.heading-sec {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.heading-sec .page-heading {
+    width: max-content;
+    margin: 15px auto;
+    padding: 0 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+/* - Trip Info Bar Section */
+
+.main-sec .trip-infobar-sec {
+    display: flex;
+    padding: 0 15px;
+    background-color: lightblue;
+}
+
+.main-sec .trip-infobar-sec table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 5px;
+}
+
+.main-sec .trip-infobar-sec table td{
+    /* background-color: #fff; */
+}
+
+.main-sec .trip-infobar-sec .trip-info-title {
+    font-weight: bold;
+    color: black;
+}
+
+.main-sec .trip-infobar-sec .trip-info-title .route {
+    background-color: #fff;
+}
+
+.main-sec .trip-infobar-sec .trip-data-row {
+    color: #1b4965;
+    background-color: white;
+}
+
+.main-sec .trip-infobar-sec .booking-btn {
+    height: fit-content;
+    margin: 20% 10px;
+    padding: 5px 30px;
+    color: #fff;
+    background-color: #1b4965;
+    border-radius: 5px;
+}
+
+
+/* Main Content Start */
+
+.main-sec .main-content {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/* - Bus Layout Section */
+
+.layout-heading {
+    text-align: center;
+}
+
+.full-bus-layout {
+    display: flex;
+}
+
+/* --Driver Section */
+
+.main-sec .main-content .layout-sec .driver-section {
+    min-height: 26px;
+    text-align: right;
+}
+
+/* --Driver Section END*/
+
+.main-sec .main-content .layout-sec {
+    /* display: flex; */
+    width: fit-content;
+    margin: 15px;
+    gap: 8px;
+}
+
+.hideSeat {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.main-sec .main-content .layout-sec .layout {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.main-sec .main-content .layout-sec .row {
+    display: flex;
+    gap: 4px;
+}
+
+.main-sec .main-content .layout-sec .row > .left-seats,
+.main-sec .main-content .layout-sec .row > .right-seats {
+    display: flex;
+    gap: 4px;
+}
+
+.main-sec .main-content .layout-sec .row > .middle-seats {
+    min-width: 28px;
+}
+
+.main-sec .main-content .layout-sec .seat {
+    position: relative;
+}
+
+.main-sec .main-content .layout-sec .seat .seat-image { 
+    border-radius: 3px;
+}
+
+.main-sec .main-content .layout-sec .seat .seat-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12px;
+    padding: 2px 5px;
+    pointer-events: none;
+}
+
+.main-sec .main-content .layout-sec .seat input[type="checkbox"] {
+    display: none;
+}
+
+
+.layer-label {
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* Booking Form Section */
+
+.main-sec .main-content .booking-sec {
+    min-width: 350px;
+}
+
+.main-sec .main-content .booking-sec .form-heading {
+    margin: 15px;
+    text-align: center;
+}
+
+.main-sec .main-content .booking-sec form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 20px 0 ;
+    /* width: 33vh; */
+}
+
+.main-sec .main-content .booking-sec form > .field {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.main-sec .main-content .booking-sec form > .field .passenger-icon {
+    
+}
+
+.main-sec .main-content .booking-sec form > .field .passenger-icon {
+    height: 100%;
+    padding: 2px 3px;
+    background-color: #fff;
+}
+
+.main-sec .main-content .booking-sec form > .field input,
+.main-sec .main-content .booking-sec form .age-select {
+    height: 1.8rem;
+    min-width: 30vh;
+}
+
+.main-sec .main-content .booking-sec form > .data-table {
+    margin: 6px 0;
+    table-layout: fixed;
+    width: 200px;
+}
+
+.main-sec .main-content .booking-sec form > .data-table .title {
+    font-weight: bold;
+    color: #1b4986;
+    line-height: 1.2rem;
+    max-width: 100px;
+}
+
+.main-sec .main-content .booking-sec form > .data-table td {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.main-sec .main-content .booking-sec form .book-btn {
+    height: 6vh;
+    width: 34vh;
+    color: #fff;
+    background-color: #1b4986;
+    border-radius: 5px;
+    border: none;
+}
+
+/* ----------- checkbox + form data => laravel var's ma store kari ne DB sudhi pahochadva nu chhe */

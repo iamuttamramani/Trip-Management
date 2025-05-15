@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+   
+    
+
+/* header - Porsion */
+
+header {
+    display: flex;
+    height: 5.8vh;
+    background-color: #1B4965;
+}
+
+header section {
+    flex-grow: 1;
+}
+
+
+    /* Nav - left porsion */
+    #logo {
+        color: #fff;
+        padding: 0 20px;
+        font-family: "";
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* Nav - Middle porsion is Empty. */
+
+    /* Nav - Right porsion */
+    #profile-picture-container {
+        display: flex;
+        margin-right: 6px;
+        justify-content: end;
+        height: 40px;
+    }
+
+    #profile-picture-container #profile-picture {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin: 5px 0;
+    }
+
+
+/* Main - Porsion */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 30fr;
+    background-color: #CAE9FF;
+}
+
+#vertical-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    min-height: 94.2vh;
+    width: 44px;
+    padding: 10px 0;
+    background-color: #1B4986;
+}
+
+
+.icon {
+    margin: 2px 5px;
+    width: 34px;
+}
+

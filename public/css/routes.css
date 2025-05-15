@@ -1,0 +1,243 @@
+.content-container .routes-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; // if required so use this */
+    align-items: center;
+}
+
+.routes-container .page-header {
+    display: grid;
+    padding: 5px 10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: lightcyan; */
+}
+
+.routes-container .page-header .heading-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.routes-container .page-header .heading-container .heading {
+    font-weight: "100";
+    padding: 0 20px;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+.routes-container .page-header .date-of-routes-container {
+    position: absolute;
+    right: 10px;
+}
+
+.routes-container .route-picker-container {
+    margin: 3px 0;
+}
+
+.routes-container .route-picker-container .route-picker *{
+    margin: 0 3px;
+}
+
+.routes-container .route-picker-container .route-picker input{
+    height: 24px;
+}
+
+.routes-container .route-picker-container .route-picker button[type='submit'] {
+    color: #fff;
+    padding: 2px 8px;
+    background-color: #5FA8D3;
+    border: none;
+    border-radius: 5px;
+}
+
+.routes-container .routes-table-container .routes-table {
+    margin-top: 5px;
+}
+
+.routes-container .routes-table-container .heading-row{
+    background-color: #1B4986;
+}
+
+.routes-container .routes-table th {
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.routes-container .routes-table td {
+    padding: 5px;
+    font-size: 12px;
+    line-height: 1.1;
+    min-width: 100px;
+    max-width: 150px;
+    word-wrap: break-word;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* BUS Cell */
+
+.routes-container .routes-table .bus-cell > .bus-picture {
+    width: 55px;
+    height: 39px;
+}
+
+.routes-container .routes-table .bus-cell > .bus-name {
+    font-size: 14px;
+}
+
+.routes-container .routes-table .bus-cell > .bus-number {
+    font-size: 10px;
+}
+
+/* From and To cell */
+
+.routes-container .routes-table .from-cell > *,
+.routes-container .routes-table .to-cell > * {
+    margin: 2px;
+}
+
+.routes-container .routes-table .from-cell > .place,
+.routes-container .routes-table .to-cell > .place {
+    letter-spacing: 0.2px;
+    font-size: 14px;
+}
+
+.routes-container .routes-table .from-cell > .date,
+.routes-container .routes-table .to-cell > .date {
+    color: gray;
+    font-size: 10px;
+}
+
+/* Pickup Points && Droping Points Cell */
+
+.routes-container .routes-table .pickup-drop-point {
+    padding: 5px 0;
+}
+
+.routes-container .routes-table .pickup-point-cell  .sign-container,
+.routes-container .routes-table .droping-point-cell .sign-container  {
+    text-align: center;
+}
+
+.routes-table .pickup-points-cell .sign-container img.see-all-points ,
+.routes-table .dropping-points-cell .sign-container img.see-all-points {
+
+}
+
+/* Driver Cell */
+
+.routes-container .routes-table .driver-cell {}
+
+.routes-container .routes-table .driver-cell .driver-picture {
+    height: 40px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+/* Booking Cell */
+
+.routes-container .routes-table .bookings-cell > * {
+    margin: 5px;
+}
+
+.routes-container .routes-table .bookings-cell .manage-btn {
+    padding: 1px 5px;
+    background-color: #e7e7e7;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+
+
+/* Vilisibility Cell */
+
+.routes-container .routes-table .visibility-cell > * {
+    margin: 2px;
+}
+
+    /* Vilisibility of route to the users + Toggle switch animation */
+
+    .visibility-switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .visibility-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height:13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* Add Route plus ball */
+
+  .routes-container > .create-route-container {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: 25px;
+    bottom: 30px;
+    background-color: #1B4986;
+  }
+
+  .routes-container .create-route-container > .sign {
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+  }

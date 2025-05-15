@@ -1,0 +1,110 @@
+/*  */
+/* Page  */
+.content-container {
+    
+}
+
+.content-container .layout-page-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 20px 14px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Header Section - Header*/
+/*  */
+
+.content-container .header-sec {
+
+}
+
+.content-container .header-sec #page-heading {
+    text-align: center;
+    line-height: 60px;
+}
+
+/* Layout Section - MAIN Content*/
+/*  */
+
+.content-container .layout-sec {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.content-container .layout-sec .bus-layout-container {
+
+    margin: 10px auto;
+}
+
+.section-label {
+    text-align: center;
+}
+
+/* Driver Section */
+.content-container .layout-sec .bus-layout-container .layout-driver-sec {
+    position: relative;
+    min-height: 26px;
+    padding-bottom: 30px;
+}
+
+.content-container .layout-sec .bus-layout-container .layout-driver-sec #driver-sign {
+    position: absolute;
+    right: 2px;
+    top: 3px;
+}
+
+/* Layout - Seating Section */
+
+.layout-sec .layout-seater-sec {
+    /* display: flex; */
+}
+
+.layout-sec .layout-seater-sec .row {
+    display: flex;
+    gap: 4px;
+}
+
+.layout-sec .layout-seater-sec .left-seats,
+.layout-sec .layout-seater-sec .right-seats {
+    display: flex;
+    gap: 4px;
+}
+
+.middle-seats {
+    min-width: 28px;
+}
+
+/* Total seats section */
+ .total-seats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat-select {
+    background-color: gray;
+}
+
+
+/* Layout Options Section - MAIN Content*/
+/*  */
+
+.content-container .layout-sec .layout-options-container {
+    margin: 10px auto;
+}
+
+.content-container .layout-sec .layouts-container {
+    display: flex;
+}
+
+
+
+/* Submit Button Section - Footer*/
+/*  */
+
+.content-container .layout-page-container .submit-button-container #submit-button {
+    display: block;
+    margin: auto;
+}

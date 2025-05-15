@@ -1,0 +1,102 @@
+/*  */
+/* Page  */
+.content-container {
+    
+}
+
+.content-container .layout-page-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 20px 14px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Header Section - Header*/
+/*  */
+
+.content-container .header-sec {
+
+}
+
+.content-container .header-sec #page-heading {
+    text-align: center;
+    line-height: 60px;
+}
+
+/* Layout Section - MAIN Content*/
+/*  */
+
+.content-container .layout-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-container .layout-sec .bus-layout-container {
+    margin: 10px auto;
+}
+
+/* Driver Section */
+.content-container .layout-sec .bus-layout-container .layout-driver-sec {
+    position: relative;
+    min-height: 26px;
+}
+
+.content-container .layout-sec .bus-layout-container .layout-driver-sec #driver-sign {
+    position: absolute;
+    right: 2px;
+    top: 3px;
+}
+
+/* Seating Section */
+ .layout-sec .bus-layout-container .seating-layout td {
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+tr td.sequence-no {
+    
+}
+
+.hidden-data {
+    width: 5rem;
+    visibility: hidden;
+}
+/* Total seats section */
+.content-container .layout-sec .bus-layout-container .total-seats-container {
+    text-align: center;
+}
+
+
+/* Layout Options Section - MAIN Content*/
+/*  */
+
+.content-container .layout-sec .layout-options-container {
+    margin: 10px auto;
+}
+
+.content-container .layout-sec .layouts-container {
+    display: flex;
+}
+
+.content-container .layout-sec .layouts-container > .option-container {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.content-container .layout-sec .layouts-container .option-container > .layout {
+    height: 120px;
+}
+
+/* Submit Button Section - Footer*/
+/*  */
+
+.content-container .layout-page-container .submit-button-container #submit-button {
+    display: block;
+    margin: auto;
+}

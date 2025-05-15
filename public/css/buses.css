@@ -1,0 +1,136 @@
+/* All Bus are showing here and you can update bus details also. here available a bus card will use to create route to alote a bus. */
+
+.content-container .buses-container { /* All bus card section */
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.content-container .buses-container .bus-card { 
+    padding: 3px 12px;
+    max-width: 300px;
+    border-radius: 30px;
+    border: 2px solid #1b4965;
+    background-color: #fff;
+}
+
+.buses-container .bus-card .bus-features-section { /* Here seats and bus features icons presents */
+    display: flex;
+    justify-content: space-between;
+}
+
+.buses-container .bus-card .bus-features-section .seat-detail-container { /* both types of seats icon and number of seats value */
+    display: flex;
+    gap: 5px;
+}
+
+.buses-container .bus-card .bus-features-section .seat-detail-container .seats{  /* targeted to the number of seats */
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.buses-container .bus-card .bus-features-section .seat-container { /* this for chair seat and for berth seat box */
+    gap: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buses-container .bus-card .bus-features-section .bus-features-container { /* Bus functionality icons box */
+    display: flex;
+    margin-top: 4px;
+    gap: 3px;
+    align-items: center;
+}
+
+.buses-container .bus-card .bus-picture-section { /* represent the slot of bus picture */
+    display: flex;
+    margin-top: 10px ;
+    justify-content: center;
+}
+
+.buses-container .bus-card .bus-picture-container { /* container of bus picture */
+    margin: 4px auto 8px auto;
+    height: 160px;
+    width: 250px;
+    box-shadow: 0 0 4px 0.1px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.bus-card .bus-picture-container .bus-picture { 
+    height: 160px;
+    width: 250px;
+}
+
+.bus-card .bus-name-section .bus-name { 
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bus-card .bus-data-section { /* representing bus data in section */
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+.bus-card .bus-data-section table{ /* way of representing is table formate */
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 13px;
+}
+
+.bus-card .bus-data-section table td {
+    line-height: 0.8rem;
+    padding: 3px 3px;
+    padding-right: 10px;
+}
+
+.bus-card .update-button-section { /* Last section for button */
+    margin: 6px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bus-card .update-button-section button {
+    color: #fff;
+    padding: 1px;
+    margin: 8px;
+    border: none;
+    border-radius: 2px;
+    margin: 0 auto;
+    font-size: 15px;
+    width: 8rem;
+    background-color: #1b4965;
+}
+
+  /* Add Route plus ball */
+
+  .content-container .add-bus-container {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    z-index: 999;
+    border: none;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 30px;
+    cursor: pointer;
+    background-color: #1B4986;
+  }
+
+  .content-container .add-bus-container .sign {
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+
+

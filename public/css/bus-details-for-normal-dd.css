@@ -1,0 +1,134 @@
+
+/*  */
+
+
+
+.content-container .bus-details-page-container {
+    display: flex;
+    margin: 15px auto;
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    max-width: 560px;
+}
+
+/* Section - Header */
+
+.content-container .bus-details-page-container .header-sec > #heading {
+    text-align: center;
+    
+}
+
+.content-container .bus-details-page-container .header-sec > hr {
+    /* height: 2px; */
+}
+
+/* Section - BUS Picture */
+
+.content-container .bus-details-page-container .picture-sec > .bus-picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1px 0;
+    margin: 20px 0;
+    height: 108px;
+    width: 192px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.content-container .bus-details-page-container .picture-sec .bus-picture-container > .bus-type-icon {
+    width: 192px;
+    margin: auto 0;
+}
+
+.content-container .bus-details-page-container .picture-sec > .label-container {
+    text-align: center;
+}
+
+.content-container .bus-details-page-container .picture-sec .label-container > #bus-type-label {
+    padding: 0 20px;
+    font-size: 14px;
+    border: 1px solid black;
+    background-color: darkgray;
+}
+
+/* Section - BUS Data */
+
+.content-container .bus-details-page-container .data-sec .layer-label-container > #layer-label {
+    padding: 0px 20px;
+    font-size: 10px;
+    line-height: 14px;
+    background-color: darkgray;
+    font-weight: bold;
+}
+
+
+ .bus-details-page-container .data-sec .layer-data-container table {
+    width: 100%;
+}
+
+ .bus-details-page-container .data-sec .layer-data-container table td{
+    padding: 5px;
+}
+
+/* Number of Seats Field */
+
+.bus-details-page-container .data-sec .layer-data-container input#lower-number-of-seats {
+    width: 3rem;
+}
+
+.bus-details-page-container .data-sec .layer-data-container input#upper-number-of-seats {
+    width: 3rem;
+}
+
+.bus-details-page-container .data-sec .layer-data-container input#number-of-seats {
+    width: 3rem;
+}
+
+/* Seat Options Field */
+
+.bus-details-page-container .data-sec .layer-data-container .seat-types-container {
+    display: flex;
+    column-gap: 5px;
+}
+
+.data-sec .layer-data-container .seat-types-container > .seat-types-options {
+    display: flex;
+    padding: 3px 50px;
+    width: 120px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.data-sec .layer-data-container .seat-types-container .seat-types-options > #seat-type {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    line-height: 18px;
+}
+
+/* Next button */
+
+.bus-details-page-container .layer-data-container .button-container {
+    width: 100%;
+}
+
+.bus-details-page-container .layer-data-container .button-container #next-button {
+    color: #fff;
+    margin-top: 15px;
+    margin-right: 14px;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 2px;
+    float: right;
+    background-color: #5FA8D3;
+}

@@ -1,0 +1,104 @@
+/*  */
+.form-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* form */
+
+form {
+    display: flex;
+    padding: 0 30px;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50vh;
+    background-color: #fff;
+}
+
+/* Heading */
+
+form .heading-container > h2 {
+    /* text-align: center; */
+    padding: 20px;
+}
+
+/* Bus Picture */
+
+form .picture-container {
+    border-radius: 15px;
+    box-shadow: 0 0 4px;
+}
+
+form .picture-container > .bus-picture {
+    height: 108px;
+    width: 192px;
+    margin: auto 0;
+}
+
+/* Bus Details */
+
+form .data-container {
+    margin-top: 10px;
+}
+
+form .data-container label {
+    height: 100px;
+}
+
+form .data-container .input-field {
+    height: 1.8rem;
+    width: 100%;
+}
+
+form .data-container table {
+    width: 100%;
+}
+
+.bus-number-boxes-container {
+    display: flex;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+form .data-container table td label {
+    padding-right: 15px;
+}
+
+/* Bus Features */
+
+/* .features-container {
+    width: 100%;
+}
+
+.features-boxes {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.feature-box {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+} */
+
+/* Bus Status */
+
+.status-option {
+    padding: 1px 8px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+/* Bus Update Button */
+
+button[type=submit] {
+    margin: 5px;
+    padding: 0 8px;
+}
